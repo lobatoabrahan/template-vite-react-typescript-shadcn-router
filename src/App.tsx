@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Github, Zap, Sparkles, Rocket, Code2 } from "lucide-react"
+import { Link } from 'react-router'
 
 export default function LandingPage() {
   return (
@@ -19,22 +20,36 @@ export default function LandingPage() {
         <div className="max-w-6xl mx-auto text-center space-y-8">
           {/* Tech Stack Badges with Glow */}
           <div className="flex flex-wrap justify-center gap-3 mb-8 animate-fade-in-up">
-            <Badge className="px-4 py-2 text-sm font-medium bg-blue-500/10 text-blue-300 border border-blue-500/20 hover:bg-blue-500/20 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25">
-              <Sparkles className="w-3 h-3 mr-1" />
-              React 19
-            </Badge>
-            <Badge className="px-4 py-2 text-sm font-medium bg-green-500/10 text-green-300 border border-green-500/20 hover:bg-green-500/20 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/25">
-              <Zap className="w-3 h-3 mr-1" />
-              Vite 7
-            </Badge>
-            <Badge className="px-4 py-2 text-sm font-medium bg-purple-500/10 text-purple-300 border border-purple-500/20 hover:bg-purple-500/20 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25">
-              <Code2 className="w-3 h-3 mr-1" />
-              ShadCN UI
-            </Badge>
-            <Badge className="px-4 py-2 text-sm font-medium bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 hover:bg-cyan-500/20 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/25">
-              <Rocket className="w-3 h-3 mr-1" />
-              React Router
-            </Badge>
+            <Link to={"https://react.dev/"} target="_blank">
+              <Badge className="cursor-pointer px-4 py-2 text-sm font-medium bg-blue-500/10 text-blue-300 border border-blue-500/20 hover:bg-blue-500/20 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25">
+                <Sparkles className="w-3 h-3 mr-1" />
+                React 19
+              </Badge>
+            </Link>
+            <Link to={"https://vite.dev/"} target="_blank">
+
+              <Badge className="cursor-pointer px-4 py-2 text-sm font-medium bg-green-500/10 text-green-300 border border-green-500/20 hover:bg-green-500/20 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/25">
+                <Zap className="w-3 h-3 mr-1" />
+                Vite 7
+              </Badge>
+            </Link>
+
+            <Link to={"https://ui.shadcn.com/"} target="_blank">
+
+              <Badge className="cursor-pointer px-4 py-2 text-sm font-medium bg-purple-500/10 text-purple-300 border border-purple-500/20 hover:bg-purple-500/20 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25">
+                <Code2 className="w-3 h-3 mr-1" />
+                ShadCN UI
+              </Badge>
+            </Link>
+
+            <Link to={"https://www.npmjs.com/package/react-router-dom"} target="_blank">
+
+              <Badge className="cursor-pointer px-4 py-2 text-sm font-medium bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 hover:bg-cyan-500/20 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/25">
+                <Rocket className="w-3 h-3 mr-1" />
+                React Router
+              </Badge>
+            </Link>
+
           </div>
 
           {/* Main Headline with Glow Effect */}
@@ -62,25 +77,28 @@ export default function LandingPage() {
 
           {/* Call-to-Action Buttons with Advanced Effects */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-12 animate-fade-in-up animation-delay-600">
-            <Button
-              size="lg"
-              className="group px-10 py-7 text-lg font-semibold rounded-2xl bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white border-0 shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105 hover:-translate-y-1 relative overflow-hidden"
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-              <Github className="mr-2 h-4 w-4 group-hover:rotate-12 transition-transform duration-300" />
-              View on GitHub
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-600 to-purple-600 blur opacity-50 group-hover:opacity-75 transition-opacity duration-300 -z-10"></div>
-            </Button>
-
-            <Button
-              variant="outline"
-              size="lg"
-              className="group px-10 py-7 text-lg font-semibold rounded-2xl bg-slate-900/50 backdrop-blur-sm text-white border-2 border-slate-700 hover:border-cyan-500 hover:bg-slate-800/50 shadow-2xl hover:shadow-cyan-500/25 transition-all duration-300 hover:scale-105 hover:-translate-y-1 relative overflow-hidden hover:text-white"
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <Zap className="mr-3 h-5 w-5 group-hover:rotate-12 transition-transform duration-300" />
-              Get Template
-            </Button>
+            <Link to={"https://github.com/lobatoabrahan/template-vite-react-typescript-shadcn-router"} target="_blank">
+              <Button
+                size="lg"
+                className="cursor-pointer group px-10 py-7 text-lg font-semibold rounded-2xl bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white border-0 shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105 hover:-translate-y-1 relative overflow-hidden"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                <Github className="mr-2 h-4 w-4 group-hover:rotate-12 transition-transform duration-300" />
+                View on GitHub
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-600 to-purple-600 blur opacity-50 group-hover:opacity-75 transition-opacity duration-300 -z-10"></div>
+              </Button>
+            </Link>
+            <Link to={"https://github.com/lobatoabrahan/template-vite-react-typescript-shadcn-router"} target="_blank">
+              <Button
+                variant="outline"
+                size="lg"
+                className="cursor-pointer group px-10 py-7 text-lg font-semibold rounded-2xl bg-slate-900/50 backdrop-blur-sm text-white border-2 border-slate-700 hover:border-cyan-500 hover:bg-slate-800/50 shadow-2xl hover:shadow-cyan-500/25 transition-all duration-300 hover:scale-105 hover:-translate-y-1 relative overflow-hidden hover:text-white"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <Zap className="mr-3 h-5 w-5 group-hover:rotate-12 transition-transform duration-300" />
+                Get Template
+              </Button>
+            </Link>
           </div>
 
           {/* Feature Highlights with Glass Morphism */}

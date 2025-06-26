@@ -1,69 +1,87 @@
-# React + TypeScript + Vite
+# React Vite ShadCN Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📄 Descripción (Español)
 
-Currently, two official plugins are available:
+Este proyecto es una plantilla moderna para aplicaciones web construida con React, Vite, ShadCN UI, React Router y TailwindCSS. Proporciona una base sólida y escalable para comenzar nuevos proyectos con buenas prácticas y componentes estilizados listos para usar.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![screenshot](...)
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologías utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ⚛️ React  
+- ⚡ Vite  
+- 🎨 ShadCN UI  
+- 🌐 React Router  
+- 💨 TailwindCSS
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📦 Cómo clonar e instalar
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/lobatoabrahan/template-vite-react-typescript-shadcn-router.git
+cd react-vite-shadcn-template
+npm install
+🧪 Cómo ejecutar en desarrollo
+bash
+Copiar
+Editar
+npm run dev
 ```
+## ☁️ Cómo desplegar en Vercel
+Asegúrate de tener una cuenta en Vercel.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Importa este repositorio desde el panel de Vercel.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Configura los ajustes si es necesario (entorno, build command, etc.).
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Haz clic en Deploy.
+
+## 👤 Créditos
+Desarrollado por [Tu Nombre o Usuario de GitHub].
+
+## 📄 Licencia
+Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más información.
+
+React Vite ShadCN Template
+
+# 📄 Description (English)
+This project is a modern starter template for web applications built with React, Vite, ShadCN UI, React Router, and TailwindCSS. It provides a solid and scalable foundation to kickstart new projects with best practices and ready-to-use styled components.
+
+
+
+🚀 Technologies Used
+⚛️ React
+
+⚡ Vite
+
+🎨 ShadCN UI
+
+🌐 React Router
+
+💨 TailwindCSS
+
+📦 How to Clone and Install
+bash
+Copiar
+Editar
+git clone https://github.com/your-username/react-vite-shadcn-template.git
+cd react-vite-shadcn-template
+npm install
+🧪 How to Run in Development
+bash
+Copiar
+Editar
+npm run dev
+☁️ How to Deploy on Vercel
+Make sure you have an account at Vercel.
+
+Import this repository from the Vercel dashboard.
+
+Adjust the settings if needed (environment variables, build command, etc.).
+
+Click on Deploy.
+
+👤 Credits
+Developed by [Your Name or GitHub Username].
+
+📄 License
+This project is licensed under the MIT License. See the LICENSE file for details.
