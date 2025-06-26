@@ -14,7 +14,7 @@ This project is a modern starter template for web applications built with React,
 
 ## 📦 How to Clone and Install
 ```bash
-git clone https://github.com/your-username/react-vite-shadcn-template.git
+git clone https://github.com/lobatoabrahan/template-vite-react-typescript-shadcn-router.git
 cd react-vite-shadcn-template
 npm install
 ```
